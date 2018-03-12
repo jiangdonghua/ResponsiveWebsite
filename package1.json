@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack",
     "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8080",
-    "dev_win": "webpack-dev-server --inline",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline",
     "dist": "WEBPACK_ENV=online webpack -p",
     "dist_win": "set WEBPACK_ENV=online && webpack -p"
   },
@@ -27,7 +27,7 @@
     "babel-preset-es2015": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.10",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.6",
@@ -35,8 +35,9 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
     "url-loader": "^1.0.1",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5",
+    "webpack-merge": "^4.1.2"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
