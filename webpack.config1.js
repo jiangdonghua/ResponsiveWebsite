@@ -79,7 +79,7 @@ var config = {
     resolve: {
         //extensions: [' ','.scss'],
         alias: {
-            image: __dirname + '/src/image',
+            image: __dirname + '/src/fonts',
             page: __dirname + '/src/page',
             service: __dirname + '/src/service',
             util: __dirname + '/src/util',
@@ -133,7 +133,7 @@ var config = {
         //         use: 'url-loader?limit=10000&name=resource/[name].[hash:7].[ext]',
         //         // query: {
         //         //     limit: 10000,
-        //         //     name: resource('image/[name].[hash:7].[ext]')
+        //         //     name: resource('fonts/[name].[hash:7].[ext]')
         //         // }
         //
         //     },

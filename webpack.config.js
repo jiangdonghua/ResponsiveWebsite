@@ -40,13 +40,18 @@ var config = {
         watchContentBase: true,
         compress: true,
         port: 7090,
-        openPage:'dist/view',
-        open:true
+        openPage: 'dist/view',
+        open: true
         //public: /https?:\/\/([^\/]+?)\//.exec(publicPath)[1],
     },
     plugins: [
+        new webpack.ProvidePlugin({
+           '$':"jquery",
+            "jQuery": "jquery",
+            "window.jQuery": "jquery"
+        }),
         //css单独打包
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('css/[name].css'),
         //独立通用模块到js/base.js
 
         new webpack.optimize.CommonsChunkPlugin({
@@ -55,14 +60,14 @@ var config = {
         }),
         // html模板的处理
         //构建前清理 /dist 文件夹
-        //  new CleanWebpackPlugin(['dist']),
+        //new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录'))
     ],
     resolve: {
-        extensions: ['.js', '.scss','.html'],
+        extensions: ['.js', '.scss', '.html'],
         alias: {
-            image: __dirname + '/src/image',
+            images: __dirname + '/src/images',
             page: __dirname + '/src/page',
             service: __dirname + '/src/service',
             util: __dirname + '/src/util',
@@ -71,49 +76,41 @@ var config = {
     },
     module: {
         rules: [
+            // {
+            //     test: /\.css$/,
+            //     use: ["style-loader", "css-loader", "postcss-loader"]
+            // },
+            // { test: /\.scss$/,
+            //     use: ExtractTextPlugin.extract({
+            //         fallback:"style-loader",
+            //         use: ['css-loader','sass-loader','postcss-loader'],
+            //         publicPath: "/dist"
+            //     })},
+            // {
+            //     test: /\.sass$/,
+            //     use: ExtractTextPlugin.extract(
+            //         'style-loader',
+            //         'css-loader',
+            //         "postcss-loader",
+            //         'sass-loader?indentedSyntax'
+            //     )
+            // },
             {
-                test: /\.css$/,
-                loader: [
-                    'style-loader', {
-                        loader: 'css-loader',
-                        options: {
-                            //modules:true // 设置css模块化,详情参考https://github.com/css-modules/css-modules
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: function () {
-                                return [
-                                    require('autoprefixer')
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            includePaths: [
-                                path.resolve('./node_modules/bootstrap-sass/assets/stylesheets')
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.scss/,
-                use: ExtractTextPlugin.extract({
-                    use: ['css-loader', 'postcss-loader', 'sass-loader']
-                })
+                test: /\.(scss|sass|css)$/,
+                loader: ExtractTextPlugin.extract({fallback: "style-loader", use: "css-loader?importLoaders=2!postcss-loader!sass-loader"})
             },
             {
                 test: /\.(gif|png|jpg|woff|svg|eot|ttf)(\?.*)?$/,
                 use: 'url-loader?limit=10000&name=resource/[name].[hash:7].[ext]',
                 // query: {
                 //     limit: 10000,
-                //     name: resource('image/[name].[hash:7].[ext]')
+                //     name: resource('fonts/[name].[hash:7].[ext]')
                 // }
 
+            },
+            {
+                test: /.woff|.woff2|.svg|.eot|.ttf/,
+                use: 'url-loader?limit=10000&name=font/[name].[hash:7].[ext]'
             },
             {
                 test: /\.string$/,
@@ -122,16 +119,5 @@ var config = {
         ]
     }
 }
-// if('dev'=== WEBPACK_ENV){
-//     config.entry.common.push("webpack-dev-server/client?http://localhost:9000/");
-// }
-// var compiler = webpack(config);
-// var server = new WebpackDevServer(compiler, {
-//     /*我们写入配置的地方*/
-//     hot: true,
-//     stats: {
-//         colors: true
-//     }
-// });
-// server.listen(9000);
+
 module.exports = config;

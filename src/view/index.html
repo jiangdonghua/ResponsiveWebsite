@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>111</title>
+		<%= require('html-loader!./layout/head-common.html') %>
+		<title>111-首页</title>
 	</head>
-	<body>
-		22232323231
-	test
+	<body class="home" data-spy="scroll" data-target=".navbar-collapse">
+	<%= require('html-loader!./layout/header.html') %>
+	<%= require('html-loader!./layout/loading.html') %>
+	<section id="home" class="section fullscreen">
+		<div id="carousel-example-generic" class="carousel slide fullscreen" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item carousel-slider1 active">
+					<div class="carousel-content"></div>
+					<div class="carousel-caption">
+						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SUCCESS</h1>
+						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">二哈是你的<span class="highlight">宠物</span>拆家助手！</h3>
+						<p class="wow fadeIn" data-wow-delay="1s">Let Dog Show You the Way to Success</p>
+					</div>
+				</div>
+				<div class="item carousel-slider2">
+					<div class="carousel-content"></div>
+					<div class="carousel-caption">
+						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SPECIALTY</h1>
+						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">为您的项目提供<span class="highlight">专业</span>技术支持!</h3>
+						<p class="wow fadeIn" data-wow-delay="1s">Provide professional technical support for your project!</p>
+					</div>
+				</div>
+				<div class="item carousel-slider3">
+					<div class="carousel-content"></div>
+					<div class="carousel-caption">
+						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SOLUTION</h1>
+						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们知道如何<span class="highlight">解决</span>您的问题!</h3>
+						<p class="wow fadeIn" data-wow-delay="1s">We know how to solve your problems!</p>
+					</div>
+				</div>
+				<div class="item carousel-slider4">
+					<div class="carousel-content"></div>
+					<div class="carousel-caption">
+						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">FLOURISH</h1>
+						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">使您的企业永久<span class="highlight">蓬勃发展</span>!</h3>
+						<p class="wow fadeIn" data-wow-delay="1s">Make your business flourish forever!</p>
+					</div>
+				</div>
+				<div class="item carousel-slider5">
+					<div class="carousel-content"></div>
+					<div class="carousel-caption">
+						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">LEARNING</h1>
+						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们也在不断学习,<span class="highlight">与时俱进</span>!</h3>
+						<p class="wow fadeIn" data-wow-delay="1s">We are constantly learning, advancing with the times!</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<a href="#abouts" class="scroll-down toscroll hidden-xs">
+			<span class="down-button scroll-button"></span>
+			<span class="down-button scroll-button"></span>
+		</a>
+	</section>
+	<section id="abouts" class="section fullscreen"></section>
+		<!--1.jquery.unobtrusive-ajax.js <br>-->
+		<!--2.// jQuery Validation Plugin - v1.17.0 - 7/29/2017https://jqueryvalidation.org/<br>-->
+		<!--3.//https://cdn.bootcss.com/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js<br>-->
+		<!--4.//TouchSwipe - jQuery Plugin<br>-->
+		<!--5.//jquery.mousewheel.min.js<br>-->
+		<!--6.	//wow.js<br>-->
+		<!--7./*! jQuery Validation Plugin - v1.17.0 - 7/29/2017  * https://jqueryvalidation.org/<br>-->
+		<!--8. * Bootstrap v3.3.7 (http://getbootstrap.com)<br>-->
+		<!--9.	//<https://github.com/isuttell/sine-waves><br>-->
+		<!--10.jQuery v1.9.0<br>-->
+		<!--11./* https://github.com/Modernizr/Modernizr/blob/v2.8.3/modernizr.js<br>-->
+	<!--<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>-->
+	<!--<script>-->
+        <!--new WOW({-->
+            <!--offset: 0-->
+        <!--}).init();-->
+	<!--</script>-->
 	</body>
 </html>
