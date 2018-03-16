@@ -1,99 +1,207 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<%= require('html-loader!./layout/head-common.html') %>
-		<title>111-首页</title>
-	</head>
-	<body class="home" data-spy="scroll" data-target=".navbar-collapse">
-	<%= require('html-loader!./layout/header.html') %>
-	<%= require('html-loader!./layout/loading.html') %>
-	<section id="home" class="section fullscreen">
-		<div id="carousel-example-generic" class="carousel slide fullscreen" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			</ol>
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title>111-首页</title>
+</head>
+<body class="home" data-spy="scroll" data-target=".navbar-collapse">
+<%= require('html-loader!./layout/header.html') %>
+<%= require('html-loader!./layout/loading.html') %>
+<section id="home" class="section fullscreen">
+    <div id="carousel-example-generic" class="carousel slide fullscreen" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item carousel-slider1 active">
-					<div class="carousel-content"></div>
-					<div class="carousel-caption">
-						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SUCCESS</h1>
-						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">二哈是你的<span class="highlight">宠物</span>拆家助手！</h3>
-						<p class="wow fadeIn" data-wow-delay="1s">Let Dog Show You the Way to Success</p>
-					</div>
-				</div>
-				<div class="item carousel-slider2">
-					<div class="carousel-content"></div>
-					<div class="carousel-caption">
-						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SPECIALTY</h1>
-						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">为您的项目提供<span class="highlight">专业</span>技术支持!</h3>
-						<p class="wow fadeIn" data-wow-delay="1s">Provide professional technical support for your project!</p>
-					</div>
-				</div>
-				<div class="item carousel-slider3">
-					<div class="carousel-content"></div>
-					<div class="carousel-caption">
-						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SOLUTION</h1>
-						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们知道如何<span class="highlight">解决</span>您的问题!</h3>
-						<p class="wow fadeIn" data-wow-delay="1s">We know how to solve your problems!</p>
-					</div>
-				</div>
-				<div class="item carousel-slider4">
-					<div class="carousel-content"></div>
-					<div class="carousel-caption">
-						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">FLOURISH</h1>
-						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">使您的企业永久<span class="highlight">蓬勃发展</span>!</h3>
-						<p class="wow fadeIn" data-wow-delay="1s">Make your business flourish forever!</p>
-					</div>
-				</div>
-				<div class="item carousel-slider5">
-					<div class="carousel-content"></div>
-					<div class="carousel-caption">
-						<h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">LEARNING</h1>
-						<h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们也在不断学习,<span class="highlight">与时俱进</span>!</h3>
-						<p class="wow fadeIn" data-wow-delay="1s">We are constantly learning, advancing with the times!</p>
-					</div>
-				</div>
-			</div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item carousel-slider1 active">
+                <div class="carousel-content"></div>
+                <div class="carousel-caption">
+                    <h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SUCCESS</h1>
+                    <h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">二哈是你的<span class="highlight">宠物</span>拆家助手！
+                    </h3>
+                    <p class="wow fadeIn" data-wow-delay="1s">Let Dog Show You the Way to Success</p>
+                </div>
+            </div>
+            <div class="item carousel-slider2">
+                <div class="carousel-content"></div>
+                <div class="carousel-caption">
+                    <h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SPECIALTY</h1>
+                    <h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">为您的恋爱提供<span
+                            class="highlight">专业</span>技术支持!</h3>
+                    <p class="wow fadeIn" data-wow-delay="1s">Provide professional technical support for your
+                        project!</p>
+                </div>
+            </div>
+            <div class="item carousel-slider3">
+                <div class="carousel-content"></div>
+                <div class="carousel-caption">
+                    <h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">SOLUTION</h1>
+                    <h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们知道如何<span
+                            class="highlight">解决</span>您的问题!</h3>
+                    <p class="wow fadeIn" data-wow-delay="1s">We know how to solve your problems!</p>
+                </div>
+            </div>
+            <div class="item carousel-slider4">
+                <div class="carousel-content"></div>
+                <div class="carousel-caption">
+                    <h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">FLOURISH</h1>
+                    <h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">使您的爱情事业<span
+                            class="highlight">蓬勃发展</span>!</h3>
+                    <p class="wow fadeIn" data-wow-delay="1s">Make your business flourish forever!</p>
+                </div>
+            </div>
+            <div class="item carousel-slider5">
+                <div class="carousel-content"></div>
+                <div class="carousel-caption">
+                    <h1 class="lingxin-font highlight wow bounceIn" data-wow-delay="0.2s">LEARNING</h1>
+                    <h3 class="lingxin-font wow bounceInUp" data-wow-delay="0.5s">我们也在不断学习,<span
+                            class="highlight">与时俱进</span>!</h3>
+                    <p class="wow fadeIn" data-wow-delay="1s">We are constantly learning, advancing with the times!</p>
+                </div>
+            </div>
+        </div>
 
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-		<a href="#abouts" class="scroll-down toscroll hidden-xs">
-			<span class="down-button scroll-button"></span>
-			<span class="down-button scroll-button"></span>
-		</a>
-	</section>
-	<section id="abouts" class="section fullscreen"></section>
-		<!--1.jquery.unobtrusive-ajax.js <br>-->
-		<!--2.// jQuery Validation Plugin - v1.17.0 - 7/29/2017https://jqueryvalidation.org/<br>-->
-		<!--3.//https://cdn.bootcss.com/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js<br>-->
-		<!--4.//TouchSwipe - jQuery Plugin<br>-->
-		<!--5.//jquery.mousewheel.min.js<br>-->
-		<!--6.	//wow.js<br>-->
-		<!--7./*! jQuery Validation Plugin - v1.17.0 - 7/29/2017  * https://jqueryvalidation.org/<br>-->
-		<!--8. * Bootstrap v3.3.7 (http://getbootstrap.com)<br>-->
-		<!--9.	//<https://github.com/isuttell/sine-waves><br>-->
-		<!--10.jQuery v1.9.0<br>-->
-		<!--11./* https://github.com/Modernizr/Modernizr/blob/v2.8.3/modernizr.js<br>-->
-	<!--<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>-->
-	<!--<script>-->
-        <!--new WOW({-->
-            <!--offset: 0-->
-        <!--}).init();-->
-	<!--</script>-->
-	</body>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <a href="#abouts" class="scroll-down toscroll hidden-xs">
+        <span class="down-button scroll-button"></span>
+        <span class="down-button scroll-button"></span>
+    </a>
+</section>
+<section id="abouts" class="section fullscreen">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 text-center">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs wow bounceInRight" role="tablist">
+                        <li role="presentation" class="active"><a href="#about1" aria-controls="about1" role="tab"
+                                                                  data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#about2" aria-controls="about2" role="tab" data-toggle="tab">Profile</a>
+                        </li>
+                        <li role="presentation"><a href="#about3" aria-controls="about3" role="tab" data-toggle="tab">Messages</a>
+                        </li>
+                        <li role="presentation"><a href="#about4" aria-controls="about4" role="tab" data-toggle="tab">Settings</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content wow bounceInRight" data-wow-delay="0.2s">
+                        <div role="tabpanel" class="tab-pane fade in active" id="about1">
+                            <p>
+                                　常常，熙熙攘攘的人群让我感到拥挤；车水马龙的街道让我觉得压抑；水泄不通的交通堵塞让我感到心急如焚，弯弯绕绕的马路巷口让我觉得迷茫，于是，我便减少了出门，减少了拥挤，只想一个人，清清静静的，端坐在属于自己的时光深处。</p>
+                            <p>
+                                如果可以，我愿意摆脱这样沉重的枷锁，远离世俗的喧嚣，驾一叶小舟，携一片绿叶，掮一朵白云，在水气氤氲的湖面漂浮；或驰一匹白驹，再宽阔无边的草原之上，在广袤无垠的蓝天之下，呼吸最清新的空气，抚摸最温柔的和风。</p>
+                            <p>我喜欢自由的空气，喜欢一个人的清欢。或是看书，或是听歌，或是写作，或是发呆，无论做什么，都是好的，没有人打扰的。</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="about2">
+                            <dl>
+                                <dt class="h4 highlight">　是的，我不喜欢被打扰。</dt>
+                                <dd>
+                                    经常，一个人在家的时候，我连手机都会调成静音。实在担心有什么突发事情需要找我的时候，我会调成震动。我不喜欢自己正专注做一件事情的时候，被突然的声音打断，哪怕只是专注的冥想，也是需要一份内心的恬淡。
+                                </dd>
+                                <dt class="h4 highlight">一个人的时光，我把心事抖落在阳光下暴晒</dt>
+                                <dd>细数那些珍藏的回忆，厘清那些呢喃的碎语。回想那些深情的眷恋，也回味那些难忘的美好。哪怕只是最简单的独白，也可以真实到让自己感动。不孤独，不寂寞，也不烦恼。</dd>
+                                <dt class="h4 highlight">在一个人的时光里，不用担心内心的暴露</dt>
+                                <dd>
+                                    也不必顾虑旁人的感受，独守一隅，是一个人的静寂，更是一个人的精彩。静静坐着，默默听着，淡淡笑着，享受一个人的时光，感受内心的宁静。书香任我嗅，茶香任我品，须臾之间，仿佛全身心都得到了放松，每一个毛孔都舒展开来自由的呼吸。
+                                </dd>
+                            </dl>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="about3">
+                            <dl>
+                                <dt class="h4 highlight">望窗外，风是轻的</dt>
+                                <dd>云是淡的，风摇枝秒，轻柔闲逸。伴着一曲纯净的轻音乐，轻读素日写下的文字，只想能够重新邂逅自己</dd>
+                                <dt class="h4 highlight">把欲说还休的疲惫去掉</dt>
+                                <dd>让心似琉璃，然后对着自己微笑，享受从心底渲染出来的一份惬意。陌上繁华，记忆如花，谁不有二三朵娉婷？</dd>
+                                <dt class="h4 highlight">带着情绪的花</dt>
+                                <dd>莫名的舒展开，高山流水，如诗如画，美到蚀骨，风吹过处，暗香盈袖。</dd>
+                                <dt class="h4 highlight">最是一抹心事</dt>
+                                <dd>甜到忧伤，那些过往的纠葛，百转的柔肠，写意着那些少不更事的青春萌动，刻画了儿女情怀的如痴如醉。</dd>
+                            </dl>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="about4">
+                            <dl>
+                                <dt class="h4"><a href="/News/Details/c0be6a04-cf14-e611-9427-5cf3fce69a34"
+                                                  target="_blank" class="text-info undecoration">光影如梭，转眼飞逝。曾经的一腔柔情，一场相遇，如今已是缘尽。</a>
+                                </dt>
+                                <dd>犹如一如烟花绽放后落下的薄凉，一场绚烂的开放，已是开至尽头的荼靡，一帘心绪，如风纷飞。如今，依稀俯拾的，只是片刻记忆。…</dd>
+                                <dt class="h4"><a href="/News/Details/66ee805a-3ffb-e511-9425-5ef3fcde9a37"
+                                                  target="_blank"
+                                                  class="text-info undecoration">一个人的时光，思绪万千，偶尔路过那场往事</a></dt>
+                                <dd>
+                                    早已积聚了太多深沉，忍不住，驻足停留了片刻，想要重温一下心动的美好，奈何，纷扬如花的情牵，早已无人堪寄。那渐渐迷糊的身影，不过是一场风烟，呛的我洒落了一场梨花带雨。…
+                                </dd>
+                                <dt class="h4"><a href="/News/Details/8bb96166-79f5-e511-9424-5ef3fcde9a37"
+                                                  target="_blank" class="text-info undecoration">于是，我酿跄的奔跑，狼狈的逃离…</a>
+                                </dt>
+                                <dd>转身，依旧回到一个人的清静时光。一个人的时候，将经年所有的心事，都讲述给自己听。…</dd>
+                                <dt class="h4"><a href="/News/Details/133035b6-17f4-e511-9424-5ef3fcde9a37"
+                                                  target="_blank" class="text-info undecoration">倘若往昔，因灵魂的不小心</a></dt>
+                                <dd>惹了风月，也不过是围绕着你缠绕了一阵，而今，花落尽，尘埃已定，一切早已时过境迁。转身回眸间，唯愿时光，永如初见。…</dd>
+                            </dl>
+                            <div class="text-right"><a href="/News" target="_blank" class="text-info">更多 &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="robot"></div>
+</section>
+<section id="services" class="section fullscreen">
+    <div class="container">
+        <div class="section-content">
+            <div class="section-title lingxin-font wow rubberBand">我们<span class="highlight">提供</span>以下<span
+                    class="highlight">服务</span>供您选择
+            </div>
+            <div class="splitter">
+                <div class="splitter-bg">
+                    <img/>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 wow bounceIn" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <i class="segmdl2 segmdl2-media segmdl2-md highlight"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--1.jquery.unobtrusive-ajax.js <br>-->
+<!--2.// jQuery Validation Plugin - v1.17.0 - 7/29/2017https://jqueryvalidation.org/<br>-->
+<!--3.//https://cdn.bootcss.com/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js<br>-->
+<!--4.//TouchSwipe - jQuery Plugin<br>-->
+<!--5.//jquery.mousewheel.min.js<br>-->
+<!--6.	//wow.js<br>-->
+<!--7./*! jQuery Validation Plugin - v1.17.0 - 7/29/2017  * https://jqueryvalidation.org/<br>-->
+<!--8. * Bootstrap v3.3.7 (http://getbootstrap.com)<br>-->
+<!--9.	//<https://github.com/isuttell/sine-waves><br>-->
+<!--10.jQuery v1.9.0<br>-->
+<!--11./* https://github.com/Modernizr/Modernizr/blob/v2.8.3/modernizr.js<br>-->
+<!--<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>-->
+<!--<script>-->
+<!--new WOW({-->
+<!--offset: 0-->
+<!--}).init();-->
+<!--</script>-->
+</body>
 </html>
