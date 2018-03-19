@@ -3,6 +3,7 @@ require('.././module')
 require('page/common/header/index.js')
 require('util/lib/jquery.mousewheel.min.js')
 require('util/lib/jquery.touchSwipe.min.js')
+require('util/lib/modal.js')
 var wowAnimate=require('util/lib/wow.js')
 console.log('i am index')
 
@@ -15,7 +16,12 @@ $("#home .carousel").on("slide.bs.carousel",function () {
     var _this=$(this);
     _this.find(".carousel-inner .item .wow:not(.animated)").addClass("animated")
 })
-
+$("section#home .carousel").swipe({
+    swipe: function(n, t) {
+        t.toString() == "right" && $(".carousel").carousel("prev");
+        t.toString() == "left" && $(".carousel").carousel("next")
+    }
+});
 //mousewheel
 $(".navbar-boss .navbar-respond li a, a.toscroll").on("click", function(e) {
     var _this = $(this),
@@ -43,3 +49,17 @@ var nSwitch = function(status) {
         willDom = status ? _active.prev() : _active.next();
     willDom && willDom.find("a").click()
 };
+
+$("section#abouts").swipe({
+    swipe: function(event, direction) {
+        var i = function(n) {
+            var t = ($("#abouts ul.nav-tabs li.active").index() + n) % $("#abouts .nav-tabs li").length;
+            $("#abouts .nav-tabs li:eq(" + t + ") a").tab("show")
+        };
+        direction.toString() == "left" && i(1);
+        direction.toString() == "right" && i(-1)
+    }
+})
+$('[data-spy="scroll"]').on("activate.bs.scrollspy", function() {
+    $(".navbar-boss").attr("data-nav", $(".navbar-boss .nav li.active a").attr("href"))
+});
