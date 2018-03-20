@@ -3,7 +3,6 @@ require('.././module')
 require('page/common/header/index.js')
 require('util/lib/jquery.mousewheel.min.js')
 require('util/lib/jquery.touchSwipe.min.js')
-require('util/lib/modal.js')
 var wowAnimate=require('util/lib/wow.js')
 console.log('i am index')
 

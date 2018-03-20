@@ -12,6 +12,7 @@ var getHtmlConfig = function (name, title) {
         hash: true,
         chunks: ['common', name],
         title: title,
+        favicon: './favicon.ico'
         // minify: {
         //     removeComments: true,
         //     collapseWhitespace: true,
@@ -24,6 +25,8 @@ var config = {
     entry: {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
+        'jobs': ['./src/page/jobs/index.js'],
+        'jobs-detail': ['./src/page/jobs-detail/index.js'],
         'user-login': ['./src/page/user-login/index.js'],
     },
     output: {
@@ -62,7 +65,10 @@ var config = {
         //构建前清理 /dist 文件夹
         //new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录'))
+        new HtmlWebpackPlugin(getHtmlConfig('jobs', '招聘')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('jobs-detail', '招聘详情'))
+
     ],
     resolve: {
         extensions: ['.js', '.scss', '.html'],

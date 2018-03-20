@@ -1,0 +1,36 @@
+footer.footer {
+  padding: 25px 0 15px;
+  color: #fff;
+  background-color: #666
+}
+
+footer.footer a.scroll-top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  border: 3px solid #00c2ff;
+  border-radius: 50%;
+  color: #00c2ff;
+  opacity: .7;
+  position: fixed;
+  bottom: 15px;
+  margin-left: 45px;
+  text-decoration: none
+}
+
+footer.footer a.scroll-top .glyphicon {
+  font-size: 24px
+}
+
+@media(max-width:600px) {
+  footer.footer .pull-right {
+    float: left!important;
+    clear: both
+  }
+  footer.footer a.scroll-top {
+    right: 15px;
+    margin-left: 0
+  }
+}

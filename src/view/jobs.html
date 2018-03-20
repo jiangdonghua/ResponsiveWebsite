@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - 爱情时光馆</title>
+</head>
+<body class="home" data-spy="scroll" data-target=".navbar-collapse">
+<%= require('html-loader!./layout/header1.html') %>
+<%= require('html-loader!./layout/loading.html') %>
+<!--<section class="banner">-->
+    <!--<img src="<%= require('../images/banner/banner-jobs.jpg') %>" alt="jobs" class="banner-img" />-->
+    <!--<div class="banner-content">-->
+        <!--<div class="container">-->
+            <!--<h1 class="wow bounceInRight">给你一个<span class="highlight">平台</span>，重新认识世界！</h1>-->
+            <!--<p class="lead wow bounceInRight" data-wow-delay="0.5s">Give you a platform to re-understanding of the world!</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<section class="body-content mb30">
+    <div class="container">
+
+        <ol class="breadcrumb">
+            <li class="active">当前位置：</li>
+            <li><a href="/">首页</a></li>
+            <li class="active">公司招聘</li>
+        </ol>
+
+        <h2 class="lingxin-font text-center">选择您适合的岗位</h2>
+        <div class="splitter"><img src="<%= require('../images/clients/honey_splitter-dark.png') %>" alt="splitter" /></div>
+        <div class="row text-center">
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">技术总监</h3>
+                <p>负责整体系统的技术架构规划和设计；制定和实施重大技术决策和技术方案；系统重难点技术的攻关；</p>
+                <p>人数：2 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">运营总监</h3>
+                <p>负责公司产品的运营；根据公司发展战略制定整体运营计划，组织、协调各种资源，确保整体经营目标的达成；</p>
+                <p>人数：2 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">高级平面设计师</h3>
+                <p>清晰理解部门的设计需求，高效完成平面宣传创意设计。捕捉和挖掘产品的卖点，并加以展现。</p>
+                <p>人数：3 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">.NET 高级开发工程师</h3>
+                <p>参与公司评标产品的标准化抽离设计；负责评标项目的模块详细设计；进行评标项目的模块开发任务；</p>
+                <p>人数：5 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">WEB 前端开发工程师</h3>
+                <p>涉及大量的新产品和新技术，主要聚焦在基于云计算和 Web 的分布式系统的架构设计和开发工作。</p>
+                <p>人数：5 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <h3 class="lingxin-font">销售经理</h3>
+                <p>制订销售计划；确定销售政策；设计销售模式；新客户开拓及信息的搜集，参与合同的谈判与签订。</p>
+                <p>人数：8 人</p>
+                <p>
+                    <a class="btn btn-info btn-sm glyphicon glyphicon-th-list" href="./jobs-detail.html">详情</a>
+                    <a class="btn btn-danger btn-sm glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="./jobs-detail.html">应聘</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="text-center">
+
+            <ul class="pagination" data-invalidpageerrmsg="页索引无效" data-outrangeerrmsg="页索引超出范围" data-pagecount="1" data-pageparameter="page" data-pagerid="Webdiyer.MvcPager" data-urlformat="/Jobs?page=__page__"></ul>
+
+
+            <div class=""><span>第 <span class='bold'>1/1</span> 页, 每页 <span class='bold'>20</span> 记录, 共 <span class='bold'>6</span> 记录</span></div>
+        </div>
+    </div>
+</section>
+<%= require('html-loader!./layout/footer.html') %>
+<!--modal-->
+<div class="modal fade" id="myModal">
+
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">告诉我们您的需求</h4>
+            </div>
+            <div class="modal-body">
+                <h2 class="modalTitle hidden">告诉我们您的需求</h2>
+
+                <form action="/" autocomplete="off"
+                      role="form" novalidate="novalidate" id="form">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="UserName">姓名</label>
+                            <div class="col-md-8">
+                                <input class="form-control text-box single-line" id="UserName" name="UserName" placeholder="姓名" type="text" value="" onclick="this.focus()">
+                                <div class="help-block">
+                                    <span class="field-validation-valid text-danger"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="UserEmail">电子邮件</label>
+                            <div class="col-md-8">
+                                <input class="form-control text-box single-line"  id="UserEmail" name="UserEmail" placeholder="电子邮件"
+                                       type="text" value="" onclick="this.focus()">
+                                <div class="help-block"><span class="field-validation-valid text-danger"
+                                                              data-valmsg-for="UserEmail"
+                                                              data-valmsg-replace="true"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="Content">想说的</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control" cols="4"
+                                          id="Content" name="Content" placeholder="告诉我们您的需求…" rows="5"  onclick="this.focus()"></textarea>
+                                <div class="help-block"><span class="field-validation-valid text-danger"
+                                                              data-valmsg-for="Content"
+                                                              data-valmsg-replace="true"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-8">
+                                <button type="submit" class="btn btn-lg btn-info glyphicon glyphicon-send">提交需求</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

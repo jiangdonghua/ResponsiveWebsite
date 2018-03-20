@@ -2,7 +2,7 @@
 <html>
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title>111-首页</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 爱情时光馆</title>
 </head>
 <body class="home" data-spy="scroll" data-target=".navbar-collapse">
 <%= require('html-loader!./layout/header.html') %>
@@ -420,7 +420,7 @@
                         <span class="segmdl2 segmdl2-twitter"></span> loveforever.net</p>
                     <a class="btn btn-lg btn-block btn-info mb15 glyphicon glyphicon-send" data-toggle="modal"
                        data-target="#myModal" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess">在线提交需求</a>
-                    <a href="/Jobs" class="btn btn-lg btn-block btn-danger mb15 glyphicon glyphicon-edit">查找工作机会</a>
+                    <a href="view/jobs.html" class="btn btn-lg btn-block btn-danger mb15 glyphicon glyphicon-edit">查找工作机会</a>
                 </div>
                 <div class="col-sm-4 col-xs-6 wow flipInX text-center">
                     <div class="logo"></div>
@@ -498,24 +498,5 @@
         </div>
     </div>
 </div>
-
-<!--1.jquery.unobtrusive-ajax.js <br>-->
-<!--2.// jQuery Validation Plugin - v1.17.0 - 7/29/2017https://jqueryvalidation.org/<br>-->
-<!--3.//https://cdn.bootcss.com/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js<br>-->
-<!--4.//TouchSwipe - jQuery Plugin<br>-->
-<!--5.//jquery.mousewheel.min.js<br>-->
-<!--6.	//wow.js<br>-->
-<!--7./*! jQuery Validation Plugin - v1.17.0 - 7/29/2017  * https://jqueryvalidation.org/<br>-->
-<!--8. * Bootstrap v3.3.7 (http://getbootstrap.com)<br>-->
-<!--9.	//<https://github.com/isuttell/sine-waves><br>-->
-<!--10.jQuery v1.9.0<br>-->
-<!--11./* https://github.com/Modernizr/Modernizr/blob/v2.8.3/modernizr.js<br>-->
-<!--<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>-->
-<!--<script>-->
-<!--new WOW({-->
-<!--offset: 0-->
-<!--}).init();-->
-<!--</script>-->
-
 </body>
 </html>

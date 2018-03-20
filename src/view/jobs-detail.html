@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - 爱情时光馆</title>
+</head>
+<body class="home" data-spy="scroll" data-target=".navbar-collapse">
+<%= require('html-loader!./layout/header1.html') %>
+<%= require('html-loader!./layout/loading.html') %>
+<section class="body-content mb30">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="active">当前位置：</li>
+            <li><a href="/">首页</a></li>
+            <li><a href="./jobs.html">公司招聘</a></li>
+            <li class="active">技术总监 岗位详情</li>
+        </ol>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="alert alert-warning mb30">
+                    <h2 class="highlight">技术总监 <small>/ 需求 2 人</small></h2>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>薪资：<span class="text-danger lead">面议</span></p>
+                            <p>类型：全职 | 学历：专科 | 经验：5年以上</p>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-info btn-lg segmdl2 segmdl2-user-status" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="/Jobs/JobApplication/22c8214e-5dbb-e511-9e55-b8975a40f4f0">申请该职位</a>
+                        </div>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>职位描述：</legend>
+                    <p><p>1、负责整体系统的技术架构规划和设计；</p>
+                    <p>2、制定和实施重大技术决策和技术方案；</p>
+                    <p>3、系统重难点技术的攻关；</p></p>
+                </fieldset>
+                <fieldset class="mb50">
+                    <legend>任职要求：</legend>
+                    <p><p>1、出色的沟通交流与文档组织能力，具备良好的组织协调及宣贯能力；</p>
+                    <p>2、具有良好的责任意识与服务意识，专业、细心；</p>
+                    <p>3、良好的技术功底和架构设计能力；熟悉常用平台、中间件和开发工具；</p>
+                    <p>4、知识面广，思路开阔，创新能力强，对新技术持有敏感性并愿意致力于新技术的探索和研究；</p>
+                    <p>5、良好的系统分析、架构设计能力，有大型分布式系统、大规模高并发系统经验者优先考虑；</p></p>
+                </fieldset>
+                <div class="text-center mb30">
+                    <a class="btn btn-info btn-lg glyphicon glyphicon-user" data-ajax="true" data-ajax-begin="modalLoading" data-ajax-failure="onFailure" data-ajax-success="onSuccess" href="/Jobs/JobApplication/22c8214e-5dbb-e511-9e55-b8975a40f4f0">申请该职位</a>
+                    <a class="btn btn-danger btn-lg  	glyphicon glyphicon-share" href="/Jobs">查看其他职位</a>
+                </div>
+            </div>
+            <div Class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">热门职位</div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/22c8214e-5dbb-e511-9e55-b8975a40f4f0">技术总监</a>
+                                <p class="small">负责整体系统的技术架构规划和设计；制定和实施重大技术决策和技术方案；系统重难点技术的攻关；</p>
+                            </li>
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/966557ed-79bb-e511-9e55-b8975a40f4f0">WEB 前端开发工程师</a>
+                                <p class="small">涉及大量的新产品和新技术，主要聚焦在基于云计算和 Web 的分布式系统的架构设计和开发工作。</p>
+                            </li>
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/29fb6b66-5dbb-e511-9e55-b8975a40f4f0">运营总监</a>
+                                <p class="small">负责公司产品的运营；根据公司发展战略制定整体运营计划，组织、协调各种资源，确保整体经营目标的达成；</p>
+                            </li>
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/16382eed-78bb-e511-9e55-b8975a40f4f0">高级平面设计师</a>
+                                <p class="small">清晰理解部门的设计需求，高效完成平面宣传创意设计。捕捉和挖掘产品的卖点，并加以展现。</p>
+                            </li>
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/ecb37c68-79bb-e511-9e55-b8975a40f4f0">.NET 高级开发工程师</a>
+                                <p class="small">参与公司评标产品的标准化抽离设计；负责评标项目的模块详细设计；进行评标项目的模块开发任务；</p>
+                            </li>
+                            <li>
+                                <a class="h5 highlight" href="/Jobs/Details/711e8285-7abb-e511-9e55-b8975a40f4f0">销售经理</a>
+                                <p class="small">制订销售计划；确定销售政策；设计销售模式；新客户开拓及信息的搜集，参与合同的谈判与签订。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
